@@ -2,9 +2,13 @@ package com.customerservice.application.features.individualCustomers.mappers;
 
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerCommand;
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerResponse;
+import com.customerservice.application.features.individualCustomers.queries.getPaginationList.GetPaginationListIndividualCustomerResponse;
+import com.customerservice.corepackage.application.responses.GetListPaginationResponse;
 import com.customerservice.domain.entities.IndividualCustomer;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
+import org.springframework.data.domain.Page;
 
 @Mapper
 public interface IndividualCustomerMapper {
@@ -14,4 +18,8 @@ public interface IndividualCustomerMapper {
     IndividualCustomer individualCustomerFromCreateIndividualCustomerCommand(CreateIndividualCustomerCommand createIndividualCustomerCommand);
 
     CreateIndividualCustomerResponse createIndividualCustomerResponseFromIndividualCustomer(IndividualCustomer individualCustomer);
+
+    @Mapping(source = "individualCustomer.content",target = "items")
+    GetListPaginationResponse<GetPaginationListIndividualCustomerResponse>
+    getPaginationListIndividualCustomerResponseFromIndividualCustomer(Page<IndividualCustomer> individualCustomer);
 }
