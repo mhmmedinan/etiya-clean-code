@@ -17,7 +17,7 @@ spring:
   datasource:
     password: 12345
     username: admin
-    url: jdbc:postgresql://localhost:5470/customerservicedbdev
+    url: jdbc:postgresql://localhost:5470/customerservicedb
   jpa:
     hibernate:
       ddl-auto: update
