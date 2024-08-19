@@ -4,7 +4,6 @@ package com.customerservice.application.features.individualCustomers.commands.cr
 import an.awesome.pipelinr.Command;
 import lombok.*;
 
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -13,10 +12,11 @@ import java.time.LocalDateTime;
 public class CreateIndividualCustomerCommand implements Command<CreateIndividualCustomerResponse> {
 
     private String firstName;
+    private String lastName;
     private String middleName;
     private String gender;
     private String motherName;
     private String fatherName;
     private String nationalityId;
-    private LocalDateTime birthDate;
+    private String birthDate;
 }

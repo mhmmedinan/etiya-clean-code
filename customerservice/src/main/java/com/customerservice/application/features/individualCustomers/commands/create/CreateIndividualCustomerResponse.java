@@ -21,5 +21,5 @@ public class CreateIndividualCustomerResponse {
     private String motherName;
     private String fatherName;
     private String nationalityId;
-    private LocalDateTime birthDate;
+    private String birthDate;
 }

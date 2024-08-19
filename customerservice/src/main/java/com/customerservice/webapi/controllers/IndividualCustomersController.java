@@ -5,7 +5,6 @@ import com.customerservice.application.features.individualCustomers.commands.cre
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,7 +14,7 @@ public class IndividualCustomersController {
 
     private final Pipeline pipeline;
 
-    @PostMapping
+    @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public CreateIndividualCustomerResponse add(@RequestBody CreateIndividualCustomerCommand command){
         CreateIndividualCustomerResponse response = command.execute(pipeline);
