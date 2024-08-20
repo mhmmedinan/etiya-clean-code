@@ -38,6 +38,11 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>io.github.minan65</groupId>
+            <artifactId>core-package</artifactId>
+            <version>1.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
