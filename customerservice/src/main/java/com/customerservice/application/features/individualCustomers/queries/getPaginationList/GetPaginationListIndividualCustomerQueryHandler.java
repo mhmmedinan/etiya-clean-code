@@ -2,7 +2,7 @@ package com.customerservice.application.features.individualCustomers.queries.get
 
 import an.awesome.pipelinr.Command;
 import com.customerservice.application.features.individualCustomers.mappers.IndividualCustomerMapper;
-import com.customerservice.corepackage.application.responses.GetListPaginationResponse;
+import com.etiya.corepackage.application.responses.GetListPaginationResponse;
 import com.customerservice.domain.entities.IndividualCustomer;
 import com.customerservice.persistence.repositories.IndividualCustomerRepository;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,6 @@ public class GetPaginationListIndividualCustomerQueryHandler implements
         responses.setHasPrevious(individualCustomers.hasPrevious());
         responses.setTotalPages(individualCustomers.getTotalPages());
         responses.setSize(individualCustomers.getSize());
-        return  responses;
-
+        return responses;
     }
 }

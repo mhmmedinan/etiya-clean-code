@@ -1,8 +1,7 @@
 package com.customerservice.application.features.individualCustomers.queries.getPaginationList;
 
 import an.awesome.pipelinr.Command;
-import com.customerservice.corepackage.application.responses.GetListPaginationResponse;
-import com.customerservice.corepackage.persistence.paging.PageRequest;
+import com.etiya.corepackage.application.responses.GetListPaginationResponse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

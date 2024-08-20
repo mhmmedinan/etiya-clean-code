@@ -3,12 +3,12 @@ package com.customerservice.application.features.individualCustomers.mappers;
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerCommand;
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerResponse;
 import com.customerservice.application.features.individualCustomers.queries.getPaginationList.GetPaginationListIndividualCustomerResponse;
-import com.customerservice.corepackage.application.responses.GetListPaginationResponse;
 import com.customerservice.domain.entities.IndividualCustomer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 import org.springframework.data.domain.Page;
+import com.etiya.corepackage.application.responses.GetListPaginationResponse;
 
 @Mapper
 public interface IndividualCustomerMapper {

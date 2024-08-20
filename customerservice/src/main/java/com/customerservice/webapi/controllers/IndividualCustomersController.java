@@ -5,7 +5,7 @@ import com.customerservice.application.features.individualCustomers.commands.cre
 import com.customerservice.application.features.individualCustomers.commands.create.CreateIndividualCustomerResponse;
 import com.customerservice.application.features.individualCustomers.queries.getPaginationList.GetPaginationListIndividualCustomerQuery;
 import com.customerservice.application.features.individualCustomers.queries.getPaginationList.GetPaginationListIndividualCustomerResponse;
-import com.customerservice.corepackage.application.responses.GetListPaginationResponse;
+import com.etiya.corepackage.application.responses.GetListPaginationResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
