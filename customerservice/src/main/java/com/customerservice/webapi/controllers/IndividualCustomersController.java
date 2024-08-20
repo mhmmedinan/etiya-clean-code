@@ -35,4 +35,10 @@ public class IndividualCustomersController {
         GetListPaginationResponse<GetPaginationListIndividualCustomerResponse> response = query.execute(pipeline);
         return ResponseEntity.ok(response);
     }
+
+
+    @GetMapping("test")
+    public String test(){
+        return  "test";
+    }
 }

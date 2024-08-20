@@ -5,9 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages = "com.customerservice")
+@SpringBootApplication(scanBasePackages = {"com.customerservice","com.etiya.corepackage"})
 @EnableDiscoveryClient
-@ComponentScan(basePackages = "com.etiya.corepackage")
 public class CustomerServiceApplication {
 
 	public static void main(String[] args) {
